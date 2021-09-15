@@ -52,8 +52,8 @@ body {
 }
 
 .card[data-state="#payment"] {
-    height: 400px;
-    width: 1000px;
+    height: 500px;
+    width: 7000px;
 }
 
 .card[data-state="#experience"] {

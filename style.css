@@ -36,7 +36,7 @@ body {
     transition: 0.3s;
     flex-direction: column;
     border-radius: 10px;
-    box-shadow: 0 0 0 8px rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 0 8px rgba(235, 4, 216, 0.253);
 }
 a {
     text-decoration: none !important;
@@ -209,14 +209,14 @@ a {
 }
 
 .card-social svg {
-    fill: #a5b5ce;
+    fill: #f73fde;
     width: 16px;
     display: block;
     transition: 0.3s;
 }
 
 .card-social a {
-    color: #8797a1;
+    color: #10ec52;
     height: 32px;
     width: 32px;
     border-radius: 50%;
@@ -230,7 +230,7 @@ a {
 }
 
 .card-social a:hover svg {
-    fill: #637faa;
+    fill: #d200fc;
 }
 
 .card-social a:last-child {

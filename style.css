@@ -23,7 +23,6 @@ body {
     flex-wrap: wrap;
     padding: 20px;
 }
-
 .card {
     max-width: 340px;
     margin: auto;
@@ -48,6 +47,22 @@ a {
 
 .card[data-state="#about"] .card-main {
     padding-top: 0;
+}
+.card-fullname{
+    background: repeating-linear-gradient(-45deg, red 0%, yellow 7.14%, rgb(0,255,0) 14.28%,
+              rgb(0,255,255) 21.4%, cyan 28.56%, blue 35.7%, magenta 42.84%, red 50%);
+  background-size: 400vw 400vw;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  animation: slide 10s linear infinite forwards;
+}
+@keyframes slide {
+  0%{
+    background-position-x: 0%;
+  }
+  100%{
+    background-position-x: 400vw;
+  }
 }
 
 .card[data-state="#contact"] {
@@ -405,3 +420,5 @@ a {
     transition: 0.3s;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
+
+

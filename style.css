@@ -23,7 +23,6 @@ body {
     flex-wrap: wrap;
     padding: 20px;
 }
-
 .card {
     max-width: 340px;
     margin: auto;
@@ -66,6 +65,8 @@ a {
     background-position-x: 400vw;
   }
 }
+<<<<<<< HEAD
+=======
 
 .card[data-state="#contact"] {
     height: 430px;
@@ -78,6 +79,7 @@ a {
     bottom: 30px; 
     color: red;
 }
+>>>>>>> 2c1b296e5059458a1ab5963c08eb954326e96a39
 
 .card[data-state="#contact"] {
     height: 430px;
@@ -90,8 +92,6 @@ a {
     bottom: 30px; 
     color: red;
 }
-
-
 .card[data-state="#payment"] {
     width: 500px;
     
@@ -434,3 +434,5 @@ a {
     transition: 0.3s;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
+
+

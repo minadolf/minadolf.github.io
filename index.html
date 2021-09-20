@@ -10,9 +10,26 @@
     <link rel="stylesheet" href="./style.css">
     <link rel="shorcut icon" type="image/png" href="images\wibu.png">
 </head>
+<div class="container">
+    <div class="box">
+        <div class="clock">
+            <div class="hour">
+                <div class="hr" id="hr"></div>
+            </div>
+            <div class="min">
+                <div class="mn" id="mn"></div>
+            </div>
+            <div class="sec">
+                <div class="sc" id="sc"></div>
 
+            </div>
+        </div>
+    </div>
+</div>
 <body oncontextmenu="return false">
-<section>
+
+
+    <section>
     <div class="loader">
         <div class="dot" style="--i:1;"></div>
         <div class="dot" style="--i:2;"></div>
@@ -202,5 +219,24 @@
     }); 
 </script>
 <script src="./scripts/player.js"></script>
+<script>
+    const deg = 6;
+    const hr =document.querySelector('#hr');
+    const mn =document.querySelector('#mn');
+    const sc =document.querySelector('#sc');
+
+setInterval(() => {
+    
+    let day = new Date();
+    let hh = day.getHours() * deg;
+    let mm = day.getMinutes() * deg;
+    let ss = day.getSeconds() * deg;
+
+    hr.style.transform = `rotateZ(${hh+(mm/12)}deg)`;
+    mn.style.transform = `rotateZ(${(mm)}deg)`;
+    sc.style.transform = `rotateZ(${(ss)}deg)`;
+})
+    
+    </script>
 
 </html>

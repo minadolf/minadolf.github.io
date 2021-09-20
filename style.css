@@ -482,6 +482,103 @@ a {
     background: var(--mau-neon);
     color: var(--bg-neon);
     text-shadow: none;
+}
 
+.box{
+    position:absolute;
+    z-index: 1;
+    width: 200px;
+    height: 200px;
+    backdrop-filter: blur(25px);
+    border-radius: 50%;
+    border: 1px solid rgba(255,255,255,0.5);
+    animation: dongho 5s ease-in-out infinite;
+    animation-delay: -2.5s;
+}
+@keyframes dongho{
+    0%{
+        transform: translateY(10px);
+    }
+    50%{
+        transform: translateY(-10px);
+    }
+}
+.clock{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(transparent,rgba(255,255,255,0.2)), url(https://lh3.googleusercontent.com/bH6NV1Qe5aCiF44cisBaEkew4uUdeb4NlLN1ozvJhcGJpxSHRG2_ifek9Wd0I_zDU6jMqqTkcIa0xkdPUH4z61xCW5rc-JoUx8RyoxcBeLEDQ8h377fHUeA2qaBq1Knek69f86oGPUZlrdSDZJMxQx3MJN-4iSpvleB3LuigpotuE2ZRd86tilt8z1do171MPrqXTSV7LYiNZR4sKRHA6X11d64jz2AbyTi7c4V1uXGJ9AFZ9i85fOGrXR_HSeE0Uv1vKbn_andJ7Lo9oE6BOk2-H1HyZb5qTyuTIlNysvpu7znO22MtZjggDF9H5ShW0qVDSJWSqiW1NjNRmaTGDICT6v80wbwM7II5RcpV1GGckIN4NdxPXIDykUZCP994c8Pl-MSUpwPIxjjbu_sVLofYEwM3qvoi5nrxBh7rWFnqN-lKoEYlpFNxtoI7rXXA3eAmVcSPEw9UsPfhC1f2tax1R7mQGaWhY3LV_tRT_0zT_OPyB5a2huyXPQLEK-MhxfiX7ac1inceqtbVl1AWH9UrmBrZIPeUKIUkgAmV51NpoTCOFo4yyUAV2hovWYZKk6aliDSIKyP4VfmK_2oZYi-qjXz5IXfsIN54EELzIF5qSidtjPwp19qCdAK0zoJSQwAgMhcY11AkMoksoSw55d4S6JOCoRkP3hCIMozaomMNra4j7bL7yOIBG641R_ykIQriCWsc4v0tJI2ce4jsVCE=s200-no?authuser=0);
+    border-radius: 50%;
+    backdrop-filter: blur(25px);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-bottom: none;
+    border-right:none;
+    box-shadow: -10px -10px 20px rgba(255,255,255,0.1),
+    10px 10px 20px rgba(0,0,0,0.1),
+    10px 40px 50px rgba(0,0,0,0.2);
+}
+.clock::before{
+    content:'';
+    position: absolute;
+    width: 7.5px;
+    height: 7.5px;
+    background: #fff;
+    border-radius: 50%;
+    z-index: 10000;
+}
+.hour,
+.min,
+.sec{
+    position:absolute;
+}
+.hour, .hr{
+    width: 80px;
+    height: 80px;
+}
+.min, .mn{
+    width: 110px;
+    height: 110px;
+}
+.sec, .sc{
+    width: 140px;
+    height: 140px;
+}
+.hr, .mn, .sc{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    border-radius: 50%;
+}
+.hr::before{
+    content: '';
+    position: absolute;
+    width: 4px;
+    height: 40px;
+    background: #ff105e;
+    z-index: 11;
+    border-radius: 6px;
+}
+.mn::before{
+    content: '';
+    position: absolute;
+    width: 4px;
+    height: 60px;
+    background: #fff;
+    z-index: 12;
+    border-radius: 6px;
+}
+.sc::before{
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 90px;
+    background: #fff;
+    z-index: 12;
+    border-radius: 6px;
 }
 

@@ -228,7 +228,7 @@
 setInterval(() => {
     
     let day = new Date();
-    let hh = day.getHours() * deg;
+    let hh = day.getHours() * 30;
     let mm = day.getMinutes() * deg;
     let ss = day.getSeconds() * deg;
 
@@ -236,7 +236,11 @@ setInterval(() => {
     mn.style.transform = `rotateZ(${(mm)}deg)`;
     sc.style.transform = `rotateZ(${(ss)}deg)`;
 })
+document.getElementById('clock').innerHTML =
+hours+ "  :  " + minutes + "  :  " + seconds + " " +amPm;
+var t = setTimeout(realtimeClock,500);
+
     
-    </script>
+</script>
 
 </html>

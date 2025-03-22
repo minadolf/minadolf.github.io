@@ -296,6 +296,8 @@ a {
     display: block;
     -webkit-animation: fadeIn 0.6s both;
     animation: fadeIn 0.6s both;
+    max-height: 400px;
+    overflow-y: auto; 
 }
 
 @-webkit-keyframes fadeIn {

@@ -45,7 +45,8 @@ a {
     color:rgba(255, 110, 255, 1)
   }
 .card[data-state="#about"] {
-    height: 500px;
+    width: 500px; /* Tăng chiều rộng */
+    height: 600px; /* Tăng chiều cao */
 }
 
 .card[data-state="#about"] .card-main {
